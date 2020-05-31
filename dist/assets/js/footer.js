@@ -1,0 +1,1 @@
+"use strict";$(document).ready((function(){$(".js-toggle").on("click",(function(t){t.preventDefault(),$($(this).data("target")).toggle()}))}));

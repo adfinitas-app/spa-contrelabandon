@@ -1,0 +1,33 @@
+<nav class="nav desktop">
+	<div class="my-container">
+		<div class="logo">
+			<a href="https://www.la-spa.fr/"><img class="" src="@@webRoot/assets/img/nav-logo.png" /></a>
+		</div>
+		<div class="links mr-auto">
+			@@if (context.skip == true) {
+			<a href="#" class="btn-skip">
+				<img src="@@webRoot/assets/img/btn-skip.png" />
+			</a>
+			<a href="/" class="btn-nav d-none btn-review">
+				<img src="@@webRoot/assets/img/btn-review.png" />
+			</a>
+			<a href="/equivalence/don.html" class="btn-nav d-none btn-review">
+				<img src="@@webRoot/assets/img/btn-don.png" />
+			</a>
+			} @@if (context.skip != true) {
+			<a href="/" class="btn-nav btn-review">
+				<img src="@@webRoot/assets/img/btn-review.png" />
+			</a>
+			<a href="/equivalence/don.html" class="btn-nav btn-review">
+				<img src="@@webRoot/assets/img/btn-don.png" />
+			</a>
+			<a href="/?skip_video=true" class="btn-nav btn-back">
+				<img src="@@webRoot/assets/img/btn-back.png" />
+			</a>
+			}
+		</div>
+		<div>
+			@@include('_button-don.html', { href: 'https://soutenir.la-spa.fr/' })
+		</div>
+	</div>
+</nav>

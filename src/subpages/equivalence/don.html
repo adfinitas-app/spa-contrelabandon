@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>La SPA - Contre l'abandon</title>
+		<link rel="stylesheet" href="@@webRoot/assets/css/styles.min.css" />
+		@@include('../../partials/_meta.html')
+	</head>
+	<body>
+		@@include('../../partials/nav.html', {skip: false})
+
+		<div class="my-container equivalence-don">
+			<div class="title-container">
+				<p class="title">UN ANIMAL QUI ARRIVE À LA SPA EST UN SURVIVANT DE L’ABANDON</p>
+				<p class="subtitle">
+					Cet été, aidez-nous à recueillir les rescapés de cet enfer !
+				</p>
+			</div>
+			<div class="choose-frequency-container">
+				<label
+					><input type="radio" value="once" name="frequency" class="1"/> Je donne une fois</label
+				>
+				<label
+					><input type="radio" value="regular" name="frequency" /> Je donne tous les
+					mois</label
+				>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-3">
+						<a class="bloc-don 1" href="https://soutenir.la-spa.fr/?lang=fr_FR&free_amount=0">
+							<div class="picto-don-container">
+								<img class="picto-don" src="@@webRoot/assets/img/picto-don-1.png" />
+							</div>
+							<p class="don-amount"><span>X</span><sup>€</sup></p>
+							<p class="soit">SOIT <span>X</span>€*</p>
+							<div class="don-text-container">
+								<p class="don-text">Vous nourrissez un chien pendant 6 mois.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-12 col-md-3">
+						<a class="bloc-don 2 active" href="https://soutenir.la-spa.fr/?lang=fr_FR&free_amount=0">
+							<div class="picto-don-container">
+								<img class="picto-don" src="@@webRoot/assets/img/picto-don-2.png" />
+							</div>
+							<p class="don-amount"><span>X</span><sup>€</sup></p>
+							<p class="soit">SOIT <span>X</span>€*</p>
+							<div class="don-text-container">
+								<p class="don-text">
+									Vous prenez en charge ses frais vétérinaires pendant 6 mois.
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-12 col-md-3">
+						<a class="bloc-don 3" href="https://soutenir.la-spa.fr/?lang=fr_FR&free_amount=0">
+							<div class="picto-don-container">
+								<img class="picto-don" src="@@webRoot/assets/img/picto-don-3.png" />
+							</div>
+							<p class="don-amount"><span>X</span><sup>€</sup></p>
+							<p class="soit">SOIT <span>X</span>€*</p>
+							<div class="don-text-container">
+								<p class="don-text">
+									Vous financez la prise en charge totale d’un chien victime
+									d’abandon pour qu’il soit adopté.
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-12 col-md-3">
+						<div class="bloc-don-free">
+							<div class="picto-don-container">
+								<img class="picto-don" src="@@webRoot/assets/img/picto-don-4.png" />
+							</div>
+							<p class="don-amount"><input id="input-free-amount"/><sup>€</sup></p>
+							<p class="soit">SOIT <span></span>€*</p>
+							<div class="don-text-container">
+								<p class="don-text">Montant libre</p>
+							</div>
+						</div>
+					</div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="apres-deduc">*après déduction fiscale</p>
+                        <div class="text-center">
+                            <a class="button-don btn-nav d-inline-block" href="https://soutenir.la-spa.fr/?lang=fr_FR" target="_blank">
+                                Je fais un don
+                            </a>
+                        </div>                         
+                    </div>          
+                </div>
+			</div>
+		</div>
+
+		@@include('../../partials/footer.html') @@include('../../partials/_scripts.html')
+	</body>
+</html>

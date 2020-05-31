@@ -1,0 +1,144 @@
+.equivalence-don {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	.title-container {
+		max-width: 500px;
+		display: flex;
+		margin: 0 auto;
+		flex-direction: column;
+		text-align: center;
+
+		.title {
+			font-family: "Adopte Bold";
+			font-weight: bold;
+			font-size: 31px;
+			color: $color-blue;
+		}
+
+		.subtitle {
+			font-size: 12px;
+			font-weight: 600;
+			color: $color-brown;
+		}
+	}
+
+	.choose-frequency-container {
+		margin: 30px 0 20px 0;
+
+		label {
+			margin: 0 10px;
+			font-size: 14px;
+			font-weight: bold;
+			color: $color-brown;
+
+			input {
+				margin-right: 5px;
+			}
+		}
+	}
+
+	.bloc-don, .bloc-don-free {
+		box-shadow: 0px 0px 5px 0px rgba(105, 105, 105, 1);
+		background-color: white;
+		text-align: center;
+		padding: 30px;
+		display: block;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		.picto-don-container {
+            height: 111px;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+		}
+
+		.don-amount {
+            position: relative;
+			font-size: 54px;
+			color: $color-brown;
+			font-weight: bold;
+
+			sup {
+				font-size: 36px;
+				line-height: 1.2;
+			}
+			line-height: 1.2;
+		}
+
+		.soit {
+			font-size: 15px;
+			color: $color-blue;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+        .don-text-container {
+            min-height: 111px;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+		.don-text {
+			font-size: 16px;
+			color: $color-brown;
+		}
+
+		&.active {
+			background-color: $color-blue;
+
+			.don-amount {
+				color: white;
+			}
+
+			.soit {
+				color: $color-brown;
+			}
+			.don-text {
+				color: white;
+			}
+        }
+        
+        #input-free-amount {
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid $color-brown;
+            color: inherit;
+            font-weight: bold;
+            background-color: transparent;
+            text-align: center;
+            line-height: 1.2;
+            height: 62px;
+            margin-bottom: 4px;
+
+            & + sup {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+    
+    .apres-deduc {
+        margin-top: 20px;
+        color: $color-brown;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .button-don {
+        position: relative;
+        z-index: 1000;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>La SPA - Contre l'abandon</title>
+		<link rel="stylesheet" href="@@webRoot/assets/css/styles.min.css" />
+		@@include('../../partials/_meta.html')
+	</head>
+	<body>
+		@@include('../../partials/nav.html', {skip: false})
+
+        @@include('./content-subpage.html', {
+            id: 5,
+            img: '@@webRoot/assets/img/subpage-img-5.png',
+            label_title: 'Octavia',
+            label_description: '',
+            text_intro: 'Octavia avait une peur panique des hommes…',
+            text: 'Croisée berger, Octavia était extrêmement craintive à son arrivée à la Maison SPA Bordeaux. Elle ne supportait pas d’être à moins de 15 mètres de quelqu’un. <b>Son comportement témoignait d’un véritable traumatisme. Mais nos experts en comportement animal</b> ont su calmer ses angoisses. Aujourd’hui, Octavia raffole des câlins !',
+            picto: '@@webRoot/assets/img/subpage-picto-5.png',
+            picto_text: 'ABANDONNÉ,<br>UN ANIMAL SOUFFRE AUSSI<br>DE BLESSURES INVISIBLES',
+            square_1: 'Après avoir été <b>abandonné</b> par son maître',
+            square_2: 'Après avoir connu <b>la peur</b>, <b>les privations</b>, de nombreux dangers…',
+            square_3: 'L’animal est souvent <b>intérieurement « brisé »</b>',
+            conclusion: 'Les agents animaliers et éducateurs canins aident les animaux à retrouver confiance en l’Homme pour pouvoir être adoptés.',
+            don_amount: '90',
+            don_after_deduction: '30,00',
+            don_text: 'finance l’étude comportementale d’un animal pour qu’il retrouve son équilibre avant d’être proposé à l’adoption.'
+        })
+
+        @@include('../../partials/footer.html')
+
+		@@include('../../partials/_scripts.html')
+	</body>
+</html>

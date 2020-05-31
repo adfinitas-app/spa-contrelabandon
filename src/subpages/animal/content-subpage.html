@@ -1,0 +1,82 @@
+<section class="subpage">
+	<div class="mini-nav">
+		<a href="/animal/1.html" class="mini-nav-item @@if(context.id == 1) {active}">
+			<img src="@@webRoot/assets/img/carousel-animal-1.png" />
+		</a>
+		<a href="/animal/2.html" class="mini-nav-item @@if(context.id == 2) {active}">
+			<img src="@@webRoot/assets/img/carousel-animal-1.png" />
+		</a>
+		<a href="/animal/3.html" class="mini-nav-item @@if(context.id == 3) {active}">
+			<img src="@@webRoot/assets/img/carousel-animal-1.png" />
+		</a>
+		<a href="/animal/4.html" class="mini-nav-item @@if(context.id == 4) {active}">
+			<img src="@@webRoot/assets/img/carousel-animal-1.png" />
+		</a>
+		<a href="/animal/5.html" class="mini-nav-item @@if(context.id == 5) {active}">
+			<img src="@@webRoot/assets/img/carousel-animal-1.png" />
+		</a>
+	</div>
+	<div class="container">
+		<div class="my-container row">
+			<div class="col-12 col-md-4 left-part text-center">
+				<div class="fixed">
+					<div class="position-relative">
+						<img src="@@img" />
+						@@if (context.don_amount) {
+						<div class="label-don">
+							<p class="votre-don">Votre<br />don de</p>
+							<p class="don-amount">@@don_amount<sup>€</sup></p>
+							<p class="don-deduction">
+								<b>@@don_after_deduction€</b> après déduction fiscale
+							</p>
+							<p class="don-text">@@don_text</p>
+						</div>
+						}
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-4 middle-part">
+				@@if (context.text_intro) {
+				<p class="text-intro">@@text_intro</p>
+
+				} @@if (!context.text_intro) {
+				<p class="text-intro-placeholder"></p>
+				}
+				<div class="animal-label">
+					<p class="title">@@label_title</p>
+
+					<p class="description">@@label_description</p>
+				</div>
+				<div class="blue-separator"></div>
+				<p class="text">@@text</p>
+				@@if (context.conclusion) {
+				<p class="conclusion">
+					<img src="@@webRoot/assets/img/conclusion.png" />
+					@@conclusion
+				</p>
+				}
+			</div>
+			<div class="col-12 col-md-4 right-part">
+				<div class="fixed">
+					<div class="right-container">
+						<div class="text-center">
+							<img class="picto" src="@@picto" />
+						</div>
+						<p class="picto-text">@@picto_text</p>
+						<div class="two-squares">
+							<div class="square">
+								@@square_1
+							</div>
+							<div class="square">
+								@@square_2
+							</div>
+						</div>
+						<div class="square">
+							@@square_3
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

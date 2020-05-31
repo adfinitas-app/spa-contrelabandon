@@ -1,0 +1,1 @@
+"use strict";var images=new Array;function preload(e){for(var a=0;a<e.length;a++)images[a]=new Image,images[a].src=e[a]}preload([]);

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>La SPA - Contre l'abandon</title>
+		<link rel="stylesheet" href="@@webRoot/assets/css/styles.min.css" />
+		@@include('../../partials/_meta.html')
+	</head>
+	<body>
+		@@include('../../partials/nav.html', {skip: false})
+
+        @@include('./content-subpage.html', {
+            id: 1,
+            img: '@@webRoot/assets/img/subpage-img-1.png',
+            label_title: 'L\'abandon',
+            label_description: 'Le début D’UNE LONGUE SÉRIE DE SOUFFRANCES !',
+            text_intro: '',
+            text: 'Les vacances d’été vont être un peu différentes cette année suite à la pandémie de COVID-19. Mais une chose ne changera pas : <span>des milliers d’animaux vont encore être lâchement abandonnés et seront exposés à d’innombrables dangers !</span>',
+            picto: '@@webRoot/assets/img/subpage-picto-1.png',
+            picto_text: 'Le choc<br> de l\'abandon !',
+            square_1: '<b>Avant, il avait un abri, des habitudes</b>',
+            square_2: 'Un animal abandonné est <b>en état de choc</b>',
+            square_3: 'Dans une forêt, un terrain vague, sur le bord d’une route… il se sent <b>perdu</b>. Il est <b>bouleversé</b>, <b>stressé</b>.',
+            conclusion: '',
+            don_amount: '',
+            don_after_deduction: '',
+            don_text: ''
+        })
+
+        @@include('../../partials/footer.html')
+
+		@@include('../../partials/_scripts.html')
+	</body>
+</html>

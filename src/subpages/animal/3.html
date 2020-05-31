@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>La SPA - Contre l'abandon</title>
+		<link rel="stylesheet" href="@@webRoot/assets/css/styles.min.css" />
+		@@include('../../partials/_meta.html')
+	</head>
+	<body>
+		@@include('../../partials/nav.html', {skip: false})
+
+        @@include('./content-subpage.html', {
+            id: 3,
+            img: '@@webRoot/assets/img/subpage-img-3.png',
+            label_title: 'Rose',
+            label_description: '',
+            text_intro: 'Rose a été trouvée errante, dans un état déplorable…',
+            text: 'Un corps très maigre, des poils manquants et surtout, <b>une fracture non soignée à la patte</b> avec une plaie béante et infectée… Les vétérinaires du refuge SPA de Saint Pierre du Mont dans les Landes, n’ont eu d’autre choix que d’amputer Rose. Mais <b>depuis, la douleur a fait place à la joie de vivre</b> et cette gentille chienne oublie peu à peu les souffrances de l’abandon !',
+            picto: '@@webRoot/assets/img/subpage-picto-3.png',
+            picto_text: 'UN ANIMAL ABANDONNÉ<br>PEUT ÊTRE MALTRAITÉ',
+            square_1: 'L\'animal abandonné risque de faire de <b>mauvaises rencontres</b>',
+            square_2: 'Il peut même <b>mourir des suites de sévices</b>',
+            square_3: 'Les faits divers relatant le <b>martyr d’animaux errants</b> sont nombreux',
+            conclusion: 'Chaque année, la SPA pratique 147 530 actes vétérinaires dont 3.116 chirurgies.',
+            don_amount: '100',
+            don_after_deduction: '33,33',
+            don_text: 'participe à l’opération d’un chien.'
+        })
+
+        @@include('../../partials/footer.html')
+        
+		@@include('../../partials/_scripts.html')
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>La SPA - Contre l'abandon</title>
+		<link rel="stylesheet" href="@@webRoot/assets/css/styles.min.css" />
+		@@include('../../partials/_meta.html')
+	</head>
+	<body>
+		@@include('../../partials/nav.html', {skip: false})
+
+        @@include('./content-subpage.html', {
+            id: 2,
+            img: '@@webRoot/assets/img/subpage-img-2.png',
+            label_title: 'Vanille',
+            label_description: '',
+            text_intro: 'Vanille est arrivée au refuge SPA de Vallérargues, dans le Gard, après avoir été abandonnée. Elle n’avait plus que la peau sur les os…',
+            text: 'Lorsque notre équipe a recueilli Vanille, une chatte croisée persan, elle était <b>d’une maigreur extrême.</b> Après auscultation, notre vétérinaire a découvert qu’elle était atteinte d’une insuffisance rénale chronique <b>nécessitant un traitement à vie</b> et une alimentation spécifique. Elle a même dû être mise sous perfusion alors qu’elle faisait une crise et refusait de se nourrir.<br><br>Mais tout cela est terminé ! Vanille a retrouvé la forme et l’appétit et attend d’être adoptée.',
+            picto: '@@webRoot/assets/img/subpage-picto-2.png',
+            picto_text: 'LA FAIM ET LA SOIF :<br>2 DANGERS DE L’ABANDON',
+            square_1: 'Un chat abandonné peut très vite<b> se retrouver affamé</b>',
+            square_2: 'Un animal domestique <b>ne peut se sortir seul de l’abandon !</b>',
+            square_3: 'Un chat livré à lui-même va, au mieux, <b>se désaltérer dans un caniveau, se nourrir des déchets d’une poubelle…</b>.',
+            conclusion: 'Chaque été, la SPA recueille environ 15 000 animaux comme Vanille.',
+            don_amount: '60',
+            don_after_deduction: '20,40',
+            don_text: 'prend en charge la nourriture et les soins d’un chat pendant 2 mois.'
+        })
+
+        @@include('../../partials/footer.html')
+
+		@@include('../../partials/_scripts.html')
+	</body>
+</html>

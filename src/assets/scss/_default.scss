@@ -1,0 +1,46 @@
+//Colors
+$color-orange: #ef5713;
+$color-brown: #564637;
+$color-blue: #37B2E0;
+
+$color-grey-20: rgba(123, 121, 121, 0.2);
+$color-grey-50: rgba(123, 121, 121, 0.5);
+$color-grey-60: rgba(123, 121, 121, 0.6);
+$color-grey: rgba(123, 121, 121, 1);
+
+//Font
+$defaultFont: "Open Sans", sans-serif;
+
+//Navbar
+$navBarHeight: 90px;
+$transitionTime: 0.4s;
+
+body {
+	font-family: $defaultFont;
+	color: $color-grey;
+	overflow-x: hidden;
+	background: rgb(255, 255, 255);
+	background: radial-gradient(
+		circle,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(247, 246, 245, 1) 75%,
+		rgba(237, 234, 230, 1) 100%
+	);
+}
+
+p {
+	margin-bottom: 0;
+}
+
+.br {
+	font-size: 0px;
+}
+
+section,
+footer {
+	padding: 20px;
+	position: relative;
+}
+
+@include media-breakpoint-down(sm) {
+}

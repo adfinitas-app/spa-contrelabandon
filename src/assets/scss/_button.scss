@@ -1,0 +1,25 @@
+.button-don {
+	background-color: $color-orange;
+	font-family: 'Barlow Condensed';
+	font-weight: bold;
+	color: $white;
+	padding: 11px 15px;
+	border-radius: 50px;
+
+	display: block;
+	margin: 10px;
+	min-width: 170px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 15px;
+
+	&:hover {
+		color: $white;
+		text-decoration: none;
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.button-don {
+	}
+}

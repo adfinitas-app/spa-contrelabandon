@@ -1,0 +1,39 @@
+<header class="header">
+    <img class="video" src="@@webRoot/assets/img/tmp-header.png"/>
+    <div class="my-container container">
+        <div class="carousel-animals">
+            @@include('_carousel-animal.html', {
+                odd: false,
+                img: '@@webRoot/assets/img/carousel-animal-1.png',
+                title: 'L\'abandon',
+                description: 'Le début D’UNE LONGUE SÉRIE DE SOUFFRANCES !',
+                defaultActive: true,
+                url: '/animal/1.html'
+            })
+            @@include('_carousel-animal.html', {
+                odd: true,
+                img: '@@webRoot/assets/img/carousel-animal-1.png',
+                title: 'Vanille',
+                url: '/animal/2.html'
+            })
+            @@include('_carousel-animal.html', {
+                odd: false,
+                img: '@@webRoot/assets/img/carousel-animal-1.png',
+                title: 'Rose',
+                url: '/animal/3.html'
+            })
+            @@include('_carousel-animal.html', {
+                odd: true,
+                img: '@@webRoot/assets/img/carousel-animal-1.png',
+                title: 'Stella',
+                url: '/animal/4.html'
+            })
+            @@include('_carousel-animal.html', {
+                odd: false,
+                img: '@@webRoot/assets/img/carousel-animal-1.png',
+                title: 'Octavia',
+                url: '/animal/5.html'
+            })
+        </div>
+    </div>
+</header>
