@@ -18,10 +18,53 @@
 			display: flex;
 			height: 100%;
 			align-items: center;
+			
+			a{
+				display: block;
+				height: 100%;
+
+				img {
+					height: 100%;
+				}
+			}
 		}
 
 		.links {
 			padding: 10px;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			width: 100%;
+			height: 100%;
+			flex-direction: row;
+		}
+
+		#moreNav {
+			display: none;
+
+			.link {
+				position: absolute;
+				background-color: white;
+				padding: 20px;
+				left: 20px;
+				top: $navBarHeight;
+				border-radius: 20px;
+				box-shadow: 0px 0px 5px 0px rgba(105, 105, 105, 1);
+
+				a {
+					font-size: 12px;
+					font-weight: 600;
+					color: $color-brown;
+					text-transform: uppercase;
+					display: block;
+					margin: 5px 0;
+
+					&:hover {
+						color: $color-orange;
+						text-decoration: none;
+					}
+				}
+			}
 		}
 
 		.btn-nav {
@@ -31,7 +74,16 @@
 		}
 	}
 
-	@include media-breakpoint-down(sm) {
+	@include media-breakpoint-down(md) {
+		$navBarHeight: 62px;
+		min-height: $navBarHeight;
+		height: $navBarHeight;
+		//background: rgb(246,245,244);
+		background: linear-gradient(0deg, rgba(246,245,244,0) 0%, rgba(247,246,245,1) 100%);
+
+		.my-container #moreNav .link {
+			top: $navBarHeight;
+		}
 	}
 
 	@include media-breakpoint-down(xs) {

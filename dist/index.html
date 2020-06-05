@@ -4,19 +4,32 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>La SPA - Contre l'abandon</title>
+		<link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 		<link rel="stylesheet" href="./assets/css/styles.min.css" />
 		<meta name="title" content="La SPA - Contre l'abandon" />
 <meta name="description" content="Un animal qui arrive  à la SPA est un survivant de l’abandon. Luttons contre ce véritable parcours du combattant (dénutrition, violences, stress, froid...) et soutenez la SPA pour leur offrir une seconde chance." />
-<meta name="image" content=""/>
+<meta name="image" content="./assets/img/meta-image.png"/>
 <meta name="url" content="https://contrelabandon.la-spa.fr"/>
+
+<meta property="og:title" content="La SPA - Contre l'abandon">
+<meta property="og:description" content="Un animal qui arrive  à la SPA est un survivant de l’abandon. Luttons contre ce véritable parcours du combattant (dénutrition, violences, stress, froid...) et soutenez la SPA pour leur offrir une seconde chance.">
+<meta property="og:image" content="./assets/img/meta-image.png">
+<meta property="og:url" content="https://contrelabandon.la-spa.fr"> <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TKV7DN');</script>
+<!-- End Google Tag Manager -->
 	</head>
 	<body>
 		<nav class="nav desktop">
 	<div class="my-container">
 		<div class="logo">
-			<a href="https://www.la-spa.fr/"><img class="" src="./assets/img/nav-logo.png" /></a>
+			<a href="https://www.la-spa.fr/" target="_blank"><img class="" src="./assets/img/nav-logo.png" /></a>
 		</div>
-		<div class="links mr-auto">
+		<div class="links mr-auto d-none d-md-flex">
 			
 			<a href="#" class="btn-skip">
 				<img src="./assets/img/btn-skip.png" />
@@ -25,27 +38,45 @@
 				<img src="./assets/img/btn-review.png" />
 			</a>
 			<a href="/equivalence/don.html" class="btn-nav d-none btn-review">
-				<img src="./assets/img/btn-don.png" />
+				<img class="zoomOnHover" src="./assets/img/btn-don.png" />
 			</a>
 			 
 		</div>
-		<div>
-			<a class="button-don btn-nav" href="https://soutenir.la-spa.fr/" target="_blank">
+		<div class="links d-flex d-md-none mr-auto">
+			<a href="#" class="js-toggle mr-2" data-target="#moreNav"><img class="zoomOnHover" src="./assets/img/3dots.png" /></a>
+			<a target="_blank" class="mr-1" href="whatsapp://send?text=https://contrelabandon.la-spa.fr"><img class="zoomOnHover" src="./assets/img/phone.png" /></a>
+			<a target="_blank" class="mr-1" href="https://www.facebook.com/sharer.php?u=https://contrelabandon.la-spa.fr"><img class="zoomOnHover" src="./assets/img/facebook.png" /></a>
+			<a target="_blank" href="https://twitter.com/share?url=https://contrelabandon.la-spa.fr"><img class="zoomOnHover" src="./assets/img/twitter.png" /></a>
+		</div>
+		<div id="moreNav">
+			<div class="link">
+				<a target="_blank" href="https://donateur.la-spa.fr/">Espace personnel</a>
+				<a target="_blank" href="https://www.la-spa.fr/mentions-legales" class="orange">Mentions légales</a>
+				<a target="_blank" href="https://www.la-spa.fr/aide-contact/contactez-nous">Contact</a>
+			</div>
+		</div>
+		<div class="d-none d-md-block">
+			<a class="button-don btn-nav zoomOnHover" href="https://soutenir.la-spa.fr/" target="_blank">
 	Faire un don
+</a>
+
+		</div>
+		<div class="d-block d-md-none">
+			<a class="button-don btn-nav zoomOnHover" href="https://soutenir.la-spa.fr/" target="_blank">
+	Je donne
 </a>
 
 		</div>
 	</div>
 </nav>
-
-        <header class="header">
+ <header class="header desktop d-none d-md-block">
     <img class="video" src="./assets/img/tmp-header.png"/>
     <div class="my-container container">
         <div class="carousel-animals">
             <a
     href="/animal/1.html"
 	class="carousel-animal-item  active"
-	style="background-image: url(./assets/img/carousel-animal-1.png);"
+	style="background-image: url(./assets/img/carousel-animal-1.png)"
 >
 	<div class="carousel-overlay"></div>
 	<div class="animal-label">
@@ -59,7 +90,7 @@
             <a
     href="/animal/2.html"
 	class="carousel-animal-item odd "
-	style="background-image: url(./assets/img/carousel-animal-1.png);"
+	style="background-image: url(./assets/img/carousel-animal-1.png)"
 >
 	<div class="carousel-overlay"></div>
 	<div class="animal-label">
@@ -71,7 +102,7 @@
             <a
     href="/animal/3.html"
 	class="carousel-animal-item  "
-	style="background-image: url(./assets/img/carousel-animal-1.png);"
+	style="background-image: url(./assets/img/carousel-animal-3.png)"
 >
 	<div class="carousel-overlay"></div>
 	<div class="animal-label">
@@ -83,7 +114,7 @@
             <a
     href="/animal/4.html"
 	class="carousel-animal-item odd "
-	style="background-image: url(./assets/img/carousel-animal-1.png);"
+	style="background-image: url(./assets/img/carousel-animal-4.png)"
 >
 	<div class="carousel-overlay"></div>
 	<div class="animal-label">
@@ -95,7 +126,7 @@
             <a
     href="/animal/5.html"
 	class="carousel-animal-item  "
-	style="background-image: url(./assets/img/carousel-animal-1.png);"
+	style="background-image: url(./assets/img/carousel-animal-1.png)"
 >
 	<div class="carousel-overlay"></div>
 	<div class="animal-label">
@@ -107,26 +138,112 @@
         </div>
     </div>
 </header>
-		<footer class="footer">
+
+<header class="header mobile d-md-none d-block">
+    <div class="my-container container">
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper carousel-animals">
+            <div class="swiper-slide" style="width: 100%">
+                <a
+    href="/animal/1.html"
+	class="carousel-animal-item  active"
+	style="background-image: url(./assets/img/carousel-animal-1.png)"
+>
+	<div class="carousel-overlay"></div>
+	<div class="animal-label">
+		<p class="title">L'abandon</p>
+		
+		<p class="description">Le début D’UNE LONGUE SÉRIE DE SOUFFRANCES !</p>
+		
+	</div>
+</a>
+
+            </div>
+            <div class="swiper-slide" style="width: 100%">
+                <a
+    href="/animal/2.html"
+	class="carousel-animal-item odd "
+	style="background-image: url(./assets/img/carousel-animal-1.png)"
+>
+	<div class="carousel-overlay"></div>
+	<div class="animal-label">
+		<p class="title">Vanille</p>
+		
+	</div>
+</a>
+
+            </div>
+            <div class="swiper-slide" style="width: 100%">
+                <a
+    href="/animal/3.html"
+	class="carousel-animal-item  "
+	style="background-image: url(./assets/img/carousel-animal-3.png)"
+>
+	<div class="carousel-overlay"></div>
+	<div class="animal-label">
+		<p class="title">Rose</p>
+		
+	</div>
+</a>
+
+            </div>
+            <div class="swiper-slide" style="width: 100%">
+                <a
+    href="/animal/4.html"
+	class="carousel-animal-item odd "
+	style="background-image: url(./assets/img/carousel-animal-4.png)"
+>
+	<div class="carousel-overlay"></div>
+	<div class="animal-label">
+		<p class="title">Stella</p>
+		
+	</div>
+</a>
+
+            </div>
+            <div class="swiper-slide" style="width: 100%">
+                <a
+    href="/animal/5.html"
+	class="carousel-animal-item  "
+	style="background-image: url(./assets/img/carousel-animal-1.png)"
+>
+	<div class="carousel-overlay"></div>
+	<div class="animal-label">
+		<p class="title">Octavia</p>
+		
+	</div>
+</a>
+
+            </div>
+        </div>
+         <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</header>
+		<footer class="footer d-none d-md-block">
 	<div class="my-container">
 		<span class="mr-2">Partager : </span>
 		<div class="link">
-			<a href="whatsapp://send?text=https://contrelabandon.la-spa.fr"><img src="./assets/img/phone.png" /></a>
-			<a href="https://www.facebook.com/sharer.php?u=https://contrelabandon.la-spa.fr"><img src="./assets/img/facebook.png" /></a>
-			<a href="https://twitter.com/share?url=https://contrelabandon.la-spa.fr"><img src="./assets/img/twitter.png" /></a>
-			<a href="#" class="js-toggle" data-target="#moreFooter"><img src="./assets/img/3dots.png" /></a>
+			<a target="_blank" href="whatsapp://send?text=https://contrelabandon.la-spa.fr"><img class="zoomOnHover" src="./assets/img/phone.png" /></a>
+			<a target="_blank" href="https://www.facebook.com/sharer.php?u=https://contrelabandon.la-spa.fr"><img class="zoomOnHover" src="./assets/img/facebook.png" /></a>
+			<a target="_blank" href="https://twitter.com/share?url=https://contrelabandon.la-spa.fr"><img class="zoomOnHover" src="./assets/img/twitter.png" /></a>
+			<a href="#" class="js-toggle" data-target="#moreFooter"><img class="zoomOnHover" src="./assets/img/3dots.png" /></a>
 		</div>
 		<div id="moreFooter">
 			<div class="link">
-				<a href="https://donateur.la-spa.fr/">Espace personnel</a>
-				<a href="https://www.la-spa.fr/mentions-legales" class="orange">Mentions légales</a>
-				<a href="https://www.la-spa.fr/aide-contact/contactez-nous">Contact</a>
+				<a target="_blank" href="https://donateur.la-spa.fr/">Espace personnel</a>
+				<a target="_blank" href="https://www.la-spa.fr/mentions-legales" class="orange">Mentions légales</a>
+				<a target="_blank" href="https://www.la-spa.fr/aide-contact/contactez-nous">Contact</a>
 			</div>
 		</div>
 	</div>
 </footer>
-
-
+ <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKV7DN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 		<script
 	src="https://code.jquery.com/jquery-3.4.1.min.js"
 	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -142,6 +259,7 @@
 	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 	crossorigin="anonymous"
 ></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script type="application/javascript" src="./assets/js/preload.js"></script>
 <script type="application/javascript" src="./assets/js/url.js"></script>
 <script type="application/javascript" src="./assets/js/anchor.js"></script>

@@ -33,17 +33,17 @@ $(document).ready(function () {
 		$('.btn-skip').next('.btn-nav').removeClass('d-none').next('.btn-nav').removeClass('d-none');
 		$(".carousel-animal-item.active").find(".animal-label").css("opacity", "0");
 
-		video.fadeOut(function () {
+		video.fadeOut(200, function () {
 			$(".carousel-animals").css("opacity", "1");
 			$(".header").css("background-image", "none").css({ "background-color": "transparent" });
-			$(".carousel-animals").css("height", "500px");
+			$(".carousel-animals").css("height", "450px");
 			setTimeout(() => {
 				$(".carousel-animal-item.active").find(".animal-label").css("opacity", "");
-			}, 400);
+			}, 100);
 		});
 	});
 
-	if (getQueryParameter('skip_video') === 'true') {
+	if (getQueryParameter('skip_video') === 'true' || $(window).width() <= 768) {
 		video.trigger('ended');
 	}
 });

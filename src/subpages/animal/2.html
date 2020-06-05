@@ -5,7 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>La SPA - Contre l'abandon</title>
 		<link rel="stylesheet" href="@@webRoot/assets/css/styles.min.css" />
-		@@include('../../partials/_meta.html')
+        @@include('../../partials/_meta.html')
+		@@include('../../partials/_GTM_SPA_HEAD.html')
+        
 	</head>
 	<body>
 		@@include('../../partials/nav.html', {skip: false})
@@ -20,8 +22,8 @@
             picto: '@@webRoot/assets/img/subpage-picto-2.png',
             picto_text: 'LA FAIM ET LA SOIF :<br>2 DANGERS DE L’ABANDON',
             square_1: 'Un chat abandonné peut très vite<b> se retrouver affamé</b>',
-            square_2: 'Un animal domestique <b>ne peut se sortir seul de l’abandon !</b>',
-            square_3: 'Un chat livré à lui-même va, au mieux, <b>se désaltérer dans un caniveau, se nourrir des déchets d’une poubelle…</b>.',
+            square_2: 'Un animal domestique quel qu\'il soit <b>ne peut se sortir seul de l’abandon !</b>',
+            square_3: 'Un chat ou un chien livré à lui-même va, au mieux, <b>se désaltérer dans un caniveau et/ou se nourrir des déchets d’une poubelle…</b>.',
             conclusion: 'Chaque été, la SPA recueille environ 15 000 animaux comme Vanille.',
             don_amount: '60',
             don_after_deduction: '20,40',
@@ -30,6 +32,7 @@
 
         @@include('../../partials/footer.html')
 
+        @@include('../../partials/_GTM_SPA_BODY.html')
 		@@include('../../partials/_scripts.html')
 	</body>
 </html>

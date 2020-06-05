@@ -27,7 +27,7 @@ $(document).ready(function () {
 			bloc1: {
 				"don-amount": 10,
 				"don-soit": "3,40",
-				"don-text": "Vous contribuez à nourrir les animaux que nous recueillons.",
+				"don-text": "Vous contribuez à nourrir les animaux abandonnés que nous recueillons.",
 			},
 			bloc2: {
 				"don-amount": 15,
@@ -62,7 +62,7 @@ $(document).ready(function () {
 			bloc1: {
 				"don-amount": 84,
 				"don-soit": 29,
-				"don-text": "Vous nourrissez un chien pendant 6 mois.",
+				"don-text": "Vous nourrissez un chien victime d'abandon pendant 6 mois.",
 			},
 			bloc2: {
 				"don-amount": 120,
@@ -87,13 +87,13 @@ $(document).ready(function () {
 			bloc1: {
 				"don-amount": 60,
 				"don-soit": 20,
-				"don-text": "Prend en charge la nourriture et les soins d’un chat pendant 2 mois.",
+				"don-text": "Prend en charge la nourriture et les soins d’un chat abandonné pendant 2 mois.",
 			},
 			bloc2: {
 				"don-amount": 90,
 				"don-soit": 31,
 				"don-text":
-					"Vous financez l’étude comportementale d’un animal pour qu’il retrouve une famille.",
+					"Vous financez l’étude comportementale d’un animal traumatisé par l'abandon pour qu’il retrouve une famille.",
 			},
 			bloc3: {
 				"don-amount": 120,
@@ -101,10 +101,19 @@ $(document).ready(function () {
 				"don-text": "Permet de soigner pendant 6 mois un chien victime d’abandon . ",
 			},
 		};
-		addOrModifyQueryParameter(bloc1, "reserved_code_media", "W20PD0ZZ", "href");
-		addOrModifyQueryParameter(bloc2, "reserved_code_media", "W20PD0ZZ", "href");
-		addOrModifyQueryParameter(bloc3, "reserved_code_media", "W20PD0ZZ", "href");
-		addOrModifyQueryParameter(btnDon, "reserved_code_media", "W20PD0ZZ", "href");
+
+		if (reserved_code_media) {
+			addOrModifyQueryParameter(bloc1, "reserved_code_media", reserved_code_media, "href");
+			addOrModifyQueryParameter(bloc2, "reserved_code_media", reserved_code_media, "href");
+			addOrModifyQueryParameter(bloc3, "reserved_code_media", reserved_code_media, "href");
+			addOrModifyQueryParameter(btnDon, "reserved_code_media", reserved_code_media, "href");
+		} else {
+			addOrModifyQueryParameter(bloc1, "reserved_code_media", "W20PD0ZZL", "href");
+			addOrModifyQueryParameter(bloc2, "reserved_code_media", "W20PD0ZZL", "href");
+			addOrModifyQueryParameter(bloc3, "reserved_code_media", "W20PD0ZZL", "href");
+			addOrModifyQueryParameter(btnDon, "reserved_code_media", "W20PD0ZZL", "href");
+		}
+		
 
 		cid = 224;
 		addOrModifyQueryParameter(bloc1, "cid", "224", "href");

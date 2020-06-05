@@ -1,7 +1,13 @@
 .zoomOnHover {
-    transition: transform $transitionTime;
+	transition: transform $transitionTime;
 
-    &:hover {
-        transform: scale(1.07);
-    }
+	&:hover {
+		transform: scale(1.1);
+	}
+
+	&.button-don {
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
 }

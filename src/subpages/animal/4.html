@@ -5,7 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>La SPA - Contre l'abandon</title>
 		<link rel="stylesheet" href="@@webRoot/assets/css/styles.min.css" />
-		@@include('../../partials/_meta.html')
+        @@include('../../partials/_meta.html')
+		@@include('../../partials/_GTM_SPA_HEAD.html')
+        
 	</head>
 	<body>
 		@@include('../../partials/nav.html', {skip: false})
@@ -21,7 +23,7 @@
             picto_text: 'UN ANIMAL<br>ABANDONNÉ RISQUE DE<br>SE BLESSER ET DE TOMBER MALADE',
             square_1: 'L’animal abandonné peut faire une chute, être<b> renversé, écrasé par un véhicule…</b>',
             square_2: 'Il peut faire de mauvaises rencontres et <b>être maltraité</b>',
-            square_3: 'Laissé sans protection et sans soins, il risque de<b> tomber malade et de souffrir d’infections.</b>.',
+            square_3: 'Laissé sans protection et sans soins, il risque de<b> tomber malade et de souffrir d’infections</b>.',
             conclusion: '45 vétérinaires salariés exercent  dans les dispensaires et refuges de la SPA',
             don_amount: '120',
             don_after_deduction: '40,80',
@@ -29,7 +31,8 @@
         })
 
         @@include('../../partials/footer.html')
-        
+
+		@@include('../../partials/_GTM_SPA_BODY.html')
 		@@include('../../partials/_scripts.html')
 	</body>
 </html>

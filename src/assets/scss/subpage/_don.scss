@@ -8,7 +8,7 @@
 	align-items: center;
 
 	.title-container {
-		max-width: 500px;
+		max-width: 380px;
 		display: flex;
 		margin: 0 auto;
 		flex-direction: column;
@@ -19,6 +19,7 @@
 			font-weight: bold;
 			font-size: 31px;
 			color: $color-blue;
+			line-height: 1.2;
 		}
 
 		.subtitle {
@@ -95,7 +96,7 @@
 			color: $color-brown;
 		}
 
-		&.active {
+		&:hover {
 			background-color: $color-blue;
 
 			.don-amount {

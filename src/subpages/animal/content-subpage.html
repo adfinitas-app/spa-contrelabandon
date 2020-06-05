@@ -1,19 +1,24 @@
-<section class="subpage">
+<section class="subpage desktop d-none d-md-block">
 	<div class="mini-nav">
 		<a href="/animal/1.html" class="mini-nav-item @@if(context.id == 1) {active}">
 			<img src="@@webRoot/assets/img/carousel-animal-1.png" />
+			<div class="mini-nav-item-overlay"></div>
 		</a>
 		<a href="/animal/2.html" class="mini-nav-item @@if(context.id == 2) {active}">
 			<img src="@@webRoot/assets/img/carousel-animal-1.png" />
+			<div class="mini-nav-item-overlay"></div>
 		</a>
 		<a href="/animal/3.html" class="mini-nav-item @@if(context.id == 3) {active}">
-			<img src="@@webRoot/assets/img/carousel-animal-1.png" />
+			<img src="@@webRoot/assets/img/carousel-animal-3.png" />
+			<div class="mini-nav-item-overlay"></div>
 		</a>
 		<a href="/animal/4.html" class="mini-nav-item @@if(context.id == 4) {active}">
-			<img src="@@webRoot/assets/img/carousel-animal-1.png" />
+			<img src="@@webRoot/assets/img/carousel-animal-4.png" />
+			<div class="mini-nav-item-overlay"></div>
 		</a>
 		<a href="/animal/5.html" class="mini-nav-item @@if(context.id == 5) {active}">
 			<img src="@@webRoot/assets/img/carousel-animal-1.png" />
+			<div class="mini-nav-item-overlay"></div>
 		</a>
 	</div>
 	<div class="container">
@@ -79,4 +84,47 @@
 			</div>
 		</div>
 	</div>
+</section>
+
+<section class="subpage mobile d-block d-md-none">
+	<div class="back-container">
+		<a href="/?skip_video=true" class="btn-nav btn-back">
+			<img src="@@webRoot/assets/img/btn-back.png" />
+		</a>
+	</div>
+
+	<div class="img-container">
+		<img src="@@img" />
+		<div class="animal-label">
+			<p class="title">@@label_title</p>
+			<p class="description">@@label_description</p>
+		</div>
+	</div>
+	<p class="text-intro">@@text_intro</p>
+	<div class="blue-separator"></div>
+	<p class="text">@@text</p>
+	@@if (context.conclusion) {
+		<p class="conclusion">
+			<img src="@@webRoot/assets/img/conclusion.png" />
+			@@conclusion
+		</p>
+	}
+	<div class="squares-container pb-2">
+		<div class="text-center">
+			<img class="picto" src="@@picto" />
+		</div>
+		<p class="picto-text">@@picto_text</p>
+		<div class="two-squares">
+			<div class="square">
+				@@square_1
+			</div>
+			<div class="square">
+				@@square_2
+			</div>
+		</div>
+		<div class="square">
+			@@square_3
+		</div>
+	</div>
+	@@include('../../partials/_button-don.html', { href: 'https://soutenir.la-spa.fr/', text: 'Je fais un don' })
 </section>

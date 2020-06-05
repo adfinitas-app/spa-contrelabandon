@@ -42,12 +42,8 @@
 					display: block;
 					margin: 5px 0;
 
-					&.orange {
+					&:hover {
 						color: $color-orange;
-					}
-
-					&:hover{
-						color: inherit;
 						text-decoration: none;
 					}
 				}
