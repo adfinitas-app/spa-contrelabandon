@@ -13,12 +13,12 @@
 	transition: background-color 2s;
 
 	.video {
-		height: 100%;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		z-index: 2;
+		width: 100%;
+		// position: absolute;
+		// top: 50%;
+		// left: 50%;
+		// transform: translate(-50%, -50%);
+		// z-index: 2;
 	}
 
 	.my-container {
@@ -69,7 +69,7 @@
 					opacity: 0;
 					position: absolute;
 					left: 50%;
-					top: 50%;
+					top: 70%;
 					background-color: $color-orange;
 					color: white;
 					transition: opacity $transitionTime;
@@ -144,6 +144,112 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
+		padding: 0;
+
+		.carousel-mobile {
+			overflow-x: auto;
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			white-space: nowrap;
+			align-items: center;
+			margin-top: 50px;
+
+			.carousel-mobile-item {
+				display: block;
+				height: 60vh;
+				max-height: 800px;
+				min-width: 160px;
+				margin: 0 10px;
+				position: relative;
+
+				.btn-play-video-container {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					height: 200px;
+					background: transparent;
+					z-index: 4;
+
+					.btn-play-video {
+						position: absolute;
+						bottom: 50px;
+						left: 50%;
+						transform: translate(-50%, 0%);
+						z-index: 5;
+					}
+				}
+				
+
+				.carousel-animal-item {
+					display: block;
+					height: 100%;
+					position: relative;
+					z-index: 1;
+					background-size: cover;
+					background-position: center;
+					transition: transform $transitionTime;
+					width: 100%;
+
+					.carousel-overlay {
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 100%;
+						height: 100%;
+						background-color: rgba(255, 255, 255, 0.5);
+						transition: background-color $transitionTime;
+					}
+
+					.animal-label {
+						display: none;
+						position: absolute;
+						left: 10%;
+						top: 5%;
+						background-color: $color-orange;
+						color: white;
+						padding: 15px;
+
+						.title {
+							text-transform: uppercase;
+							font-weight: bold;
+							font-size: 36px;
+							line-height: 1.2;
+							text-align: center;
+						}
+
+						.description {
+							font-weight: bold;
+							font-size: 8px;
+							line-height: 1.2;
+							text-align: center;
+							text-transform: uppercase;
+						}
+					}
+				}
+
+				&.active {
+					height: 75vh;
+					max-height: 900px;
+					min-width: 200px;
+
+					.btn-play-video-container {
+						background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+					}
+
+					.carousel-animal-item {
+						z-index: 2;
+						.carousel-overlay {
+							background-color: rgba(0, 0, 0, 0);
+						}
+						.animal-label {
+							display: block;
+						}
+					}
+				}
+			}
+		}
 
 		.swiper-container {
 			width: 100%;
@@ -231,7 +337,6 @@
 					}
 
 					&.swiper-slide-active {
-
 					}
 
 					&:last-child {

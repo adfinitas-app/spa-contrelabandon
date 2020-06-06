@@ -1,5 +1,7 @@
 <header class="header desktop d-none d-md-block">
-    <img class="video" src="@@webRoot/assets/img/tmp-header.png"/>
+    <video autoplay muted class="video">
+        <source src="https://d1qmdf3vop2l07.cloudfront.net/fine-ice.cloudvent.net/compressed/_min_/2811bf2f31e2f62696e83b628aeaf508.mp4" type="video/mp4" />
+    </video>
     <div class="my-container container">
         <div class="carousel-animals">
             @@include('_carousel-animal.html', {
@@ -12,7 +14,7 @@
             })
             @@include('_carousel-animal.html', {
                 odd: true,
-                img: '@@webRoot/assets/img/carousel-animal-1.png',
+                img: '@@webRoot/assets/img/carousel-animal-2.png',
                 title: 'Vanille',
                 url: '/animal/2.html'
             })
@@ -30,7 +32,7 @@
             })
             @@include('_carousel-animal.html', {
                 odd: false,
-                img: '@@webRoot/assets/img/carousel-animal-1.png',
+                img: '@@webRoot/assets/img/carousel-animal-5.png',
                 title: 'Octavia',
                 url: '/animal/5.html'
             })
@@ -41,8 +43,53 @@
 <header class="header mobile d-md-none d-block">
     <div class="my-container container">
 
+        <div class="carousel-mobile">
+            <div class="carousel-mobile-item 1 active">
+                @@include('_carousel-animal.html', {
+                    odd: false,
+                    img: '@@webRoot/assets/img/carousel-animal-1.png',
+                    title: 'L\'abandon',
+                    description: 'Le début D’UNE LONGUE SÉRIE DE SOUFFRANCES !',
+                    url: '/animal/1.html',
+                    isVideo: true
+                })
+            </div>
+            <div class="carousel-mobile-item 2">
+                @@include('_carousel-animal.html', {
+                    odd: true,
+                    img: '@@webRoot/assets/img/carousel-animal-2.png',
+                    title: 'Vanille',
+                    url: '/animal/2.html'
+                })
+            </div>
+            <div class="carousel-mobile-item 3">
+                @@include('_carousel-animal.html', {
+                    odd: false,
+                    img: '@@webRoot/assets/img/carousel-animal-3.png',
+                    title: 'Rose',
+                    url: '/animal/3.html'
+                })
+            </div>
+            <div class="carousel-mobile-item 4">
+                @@include('_carousel-animal.html', {
+                    odd: true,
+                    img: '@@webRoot/assets/img/carousel-animal-4.png',
+                    title: 'Stella',
+                    url: '/animal/4.html'
+                })
+            </div>
+            <div class="carousel-mobile-item 5">
+                @@include('_carousel-animal.html', {
+                    odd: false,
+                    img: '@@webRoot/assets/img/carousel-animal-5.png',
+                    title: 'Octavia',
+                    url: '/animal/5.html'
+                })
+            </div>
+        </div>
+
     <!-- Swiper -->
-    <div class="swiper-container">
+    <div class="swiper-container d-none">
         <div class="swiper-wrapper carousel-animals">
             <div class="swiper-slide" style="width: 100%">
                 @@include('_carousel-animal.html', {
@@ -57,7 +104,7 @@
             <div class="swiper-slide" style="width: 100%">
                 @@include('_carousel-animal.html', {
                     odd: true,
-                    img: '@@webRoot/assets/img/carousel-animal-1.png',
+                    img: '@@webRoot/assets/img/carousel-animal-2.png',
                     title: 'Vanille',
                     url: '/animal/2.html'
                 })
@@ -81,7 +128,7 @@
             <div class="swiper-slide" style="width: 100%">
                 @@include('_carousel-animal.html', {
                     odd: false,
-                    img: '@@webRoot/assets/img/carousel-animal-1.png',
+                    img: '@@webRoot/assets/img/carousel-animal-5.png',
                     title: 'Octavia',
                     url: '/animal/5.html'
                 })

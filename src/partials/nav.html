@@ -5,24 +5,32 @@
 		</div>
 		<div class="links mr-auto d-none d-md-flex">
 			@@if (context.skip == true) {
-			<a href="#" class="btn-skip">
+				<!-- NAVIGATION ACCUEIL AVEC PANNEAUX -->
+			<a href="#" class="btn-skip js-hint">
 				<img src="@@webRoot/assets/img/btn-skip.png" />
+				<span class="hint-text">Accéder directement<br/>au site</span>
 			</a>
-			<a href="/" class="btn-nav d-none btn-review">
+			<a href="/" class="btn-nav d-none btn-review js-hint">
 				<img src="@@webRoot/assets/img/btn-review.png" />
+				<span class="hint-text">Revoir<br/>la&nbsp;vidéo</span>
 			</a>
-			<a href="/equivalence/don.html" class="btn-nav d-none btn-review">
+			<a href="/equivalence/don.html" class="btn-nav d-none btn-review js-hint">
 				<img class="zoomOnHover" src="@@webRoot/assets/img/btn-don.png" />
+				<span class="hint-text">Votre<br/>soutien</span>
 			</a>
 			} @@if (context.skip != true) {
-			<a href="/" class="btn-nav btn-review">
+				<!-- NAVIGATION PAGE ANIMAL -->
+			<a href="/" class="btn-nav btn-review js-hint">
 				<img src="@@webRoot/assets/img/btn-review.png" />
+				<span class="hint-text">Revoir<br/>la&nbsp;vidéo</span>
 			</a>
-			<a href="/equivalence/don.html" class="btn-nav btn-review">
+			<a href="/equivalence/don.html" class="btn-nav btn-review js-hint">
 				<img class="zoomOnHover" src="@@webRoot/assets/img/btn-don.png" />
+				<span class="hint-text">Votre<br/>soutien</span>
 			</a>
-			<a href="/?skip_video=true" class="btn-nav btn-back">
+			<a href="/?skip_video=true" class="btn-nav btn-back js-hint">
 				<img src="@@webRoot/assets/img/btn-back.png" />
+				<span class="hint-text">Retour</span>
 			</a>
 			}
 		</div>

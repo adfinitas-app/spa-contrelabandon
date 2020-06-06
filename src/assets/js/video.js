@@ -2,7 +2,7 @@ $(document).ready(function () {
 	let breakpoint = 1000;
 	const video = $(".video");
 
-	checkBroke($(window).width());
+	//checkBroke($(window).width());
 
 	function checkBroke(width) {
 		if (width > breakpoint) {
@@ -16,7 +16,7 @@ $(document).ready(function () {
 		const _this = $(this);
 		const width = _this.width();
 
-		checkBroke(width);
+		//checkBroke(width);
 	});
 
 	$(".btn-skip").on("click", function (e) {
@@ -38,7 +38,7 @@ $(document).ready(function () {
 			$(".header").css("background-image", "none").css({ "background-color": "transparent" });
 			$(".carousel-animals").css("height", "450px");
 			setTimeout(() => {
-				$(".carousel-animal-item.active").find(".animal-label").css("opacity", "");
+				$(".header.desktop .carousel-animal-item.active").find(".animal-label").css("opacity", "");
 			}, 100);
 		});
 	});

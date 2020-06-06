@@ -16,11 +16,11 @@
 <meta property="og:description" content="Un animal qui arrive  à la SPA est un survivant de l’abandon. Luttons contre ce véritable parcours du combattant (dénutrition, violences, stress, froid...) et soutenez la SPA pour leur offrir une seconde chance.">
 <meta property="og:image" content="./assets/img/meta-image.png">
 <meta property="og:url" content="https://contrelabandon.la-spa.fr"> <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TKV7DN');</script>
+})(window,document,'script','dataLayer','GTM-TKV7DN');</script> -->
 <!-- End Google Tag Manager -->
 	</head>
 	<body>
@@ -31,14 +31,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 		<div class="links mr-auto d-none d-md-flex">
 			
-			<a href="#" class="btn-skip">
+				<!-- NAVIGATION ACCUEIL AVEC PANNEAUX -->
+			<a href="#" class="btn-skip js-hint">
 				<img src="./assets/img/btn-skip.png" />
+				<span class="hint-text">Accéder directement<br/>au site</span>
 			</a>
-			<a href="/" class="btn-nav d-none btn-review">
+			<a href="/" class="btn-nav d-none btn-review js-hint">
 				<img src="./assets/img/btn-review.png" />
+				<span class="hint-text">Revoir<br/>la&nbsp;vidéo</span>
 			</a>
-			<a href="/equivalence/don.html" class="btn-nav d-none btn-review">
+			<a href="/equivalence/don.html" class="btn-nav d-none btn-review js-hint">
 				<img class="zoomOnHover" src="./assets/img/btn-don.png" />
+				<span class="hint-text">Votre<br/>soutien</span>
 			</a>
 			 
 		</div>
@@ -70,7 +74,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</div>
 </nav>
  <header class="header desktop d-none d-md-block">
-    <img class="video" src="./assets/img/tmp-header.png"/>
+    <video autoplay muted class="video">
+        <source src="https://d1qmdf3vop2l07.cloudfront.net/fine-ice.cloudvent.net/compressed/_min_/2811bf2f31e2f62696e83b628aeaf508.mp4" type="video/mp4" />
+    </video>
     <div class="my-container container">
         <div class="carousel-animals">
             <a
@@ -85,18 +91,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<p class="description">Le début D’UNE LONGUE SÉRIE DE SOUFFRANCES !</p>
 		
 	</div>
+	
 </a>
 
             <a
     href="/animal/2.html"
 	class="carousel-animal-item odd "
-	style="background-image: url(./assets/img/carousel-animal-1.png)"
+	style="background-image: url(./assets/img/carousel-animal-2.png)"
 >
 	<div class="carousel-overlay"></div>
 	<div class="animal-label">
 		<p class="title">Vanille</p>
 		
 	</div>
+	
 </a>
 
             <a
@@ -109,6 +117,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<p class="title">Rose</p>
 		
 	</div>
+	
 </a>
 
             <a
@@ -121,18 +130,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<p class="title">Stella</p>
 		
 	</div>
+	
 </a>
 
             <a
     href="/animal/5.html"
 	class="carousel-animal-item  "
-	style="background-image: url(./assets/img/carousel-animal-1.png)"
+	style="background-image: url(./assets/img/carousel-animal-5.png)"
 >
 	<div class="carousel-overlay"></div>
 	<div class="animal-label">
 		<p class="title">Octavia</p>
 		
 	</div>
+	
 </a>
 
         </div>
@@ -142,8 +153,92 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <header class="header mobile d-md-none d-block">
     <div class="my-container container">
 
+        <div class="carousel-mobile">
+            <div class="carousel-mobile-item 1 active">
+                <a
+    href="/animal/1.html"
+	class="carousel-animal-item  "
+	style="background-image: url(./assets/img/carousel-animal-1.png)"
+>
+	<div class="carousel-overlay"></div>
+	<div class="animal-label">
+		<p class="title">L'abandon</p>
+		
+		<p class="description">Le début D’UNE LONGUE SÉRIE DE SOUFFRANCES !</p>
+		
+	</div>
+	
+		<div class="btn-play-video-container">
+			<img src="./assets/img/btn-play-video.png" class="btn-play-video"/>
+		</div>
+	
+</a>
+
+            </div>
+            <div class="carousel-mobile-item 2">
+                <a
+    href="/animal/2.html"
+	class="carousel-animal-item odd "
+	style="background-image: url(./assets/img/carousel-animal-2.png)"
+>
+	<div class="carousel-overlay"></div>
+	<div class="animal-label">
+		<p class="title">Vanille</p>
+		
+	</div>
+	
+</a>
+
+            </div>
+            <div class="carousel-mobile-item 3">
+                <a
+    href="/animal/3.html"
+	class="carousel-animal-item  "
+	style="background-image: url(./assets/img/carousel-animal-3.png)"
+>
+	<div class="carousel-overlay"></div>
+	<div class="animal-label">
+		<p class="title">Rose</p>
+		
+	</div>
+	
+</a>
+
+            </div>
+            <div class="carousel-mobile-item 4">
+                <a
+    href="/animal/4.html"
+	class="carousel-animal-item odd "
+	style="background-image: url(./assets/img/carousel-animal-4.png)"
+>
+	<div class="carousel-overlay"></div>
+	<div class="animal-label">
+		<p class="title">Stella</p>
+		
+	</div>
+	
+</a>
+
+            </div>
+            <div class="carousel-mobile-item 5">
+                <a
+    href="/animal/5.html"
+	class="carousel-animal-item  "
+	style="background-image: url(./assets/img/carousel-animal-5.png)"
+>
+	<div class="carousel-overlay"></div>
+	<div class="animal-label">
+		<p class="title">Octavia</p>
+		
+	</div>
+	
+</a>
+
+            </div>
+        </div>
+
     <!-- Swiper -->
-    <div class="swiper-container">
+    <div class="swiper-container d-none">
         <div class="swiper-wrapper carousel-animals">
             <div class="swiper-slide" style="width: 100%">
                 <a
@@ -158,6 +253,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<p class="description">Le début D’UNE LONGUE SÉRIE DE SOUFFRANCES !</p>
 		
 	</div>
+	
 </a>
 
             </div>
@@ -165,13 +261,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <a
     href="/animal/2.html"
 	class="carousel-animal-item odd "
-	style="background-image: url(./assets/img/carousel-animal-1.png)"
+	style="background-image: url(./assets/img/carousel-animal-2.png)"
 >
 	<div class="carousel-overlay"></div>
 	<div class="animal-label">
 		<p class="title">Vanille</p>
 		
 	</div>
+	
 </a>
 
             </div>
@@ -186,6 +283,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<p class="title">Rose</p>
 		
 	</div>
+	
 </a>
 
             </div>
@@ -200,6 +298,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<p class="title">Stella</p>
 		
 	</div>
+	
 </a>
 
             </div>
@@ -207,13 +306,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <a
     href="/animal/5.html"
 	class="carousel-animal-item  "
-	style="background-image: url(./assets/img/carousel-animal-1.png)"
+	style="background-image: url(./assets/img/carousel-animal-5.png)"
 >
 	<div class="carousel-overlay"></div>
 	<div class="animal-label">
 		<p class="title">Octavia</p>
 		
 	</div>
+	
 </a>
 
             </div>
@@ -241,8 +341,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</div>
 </footer>
  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKV7DN"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKV7DN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
 <!-- End Google Tag Manager (noscript) -->
 		<script
 	src="https://code.jquery.com/jquery-3.4.1.min.js"
