@@ -15,11 +15,11 @@ $(document).ready(function() {
 
     //FIX IPHONE 5
     let isMoving = false;
-    $('.header.mobile .carousel-mobile').on('touchend', function() {
+    $('.header.mobile .carousel-mobile').on('touchstart', function() {        
         isMoving = false;
     });
 
-    $('.header.mobile .carousel-mobile').on('touchmove', function() {
+    $('.header.mobile .carousel-mobile').on('touchmove', function() {        
         isMoving = true;
     });
 
