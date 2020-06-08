@@ -156,6 +156,8 @@
 			align-items: center;
 			margin-top: 50px;
 
+			border: 1px solid red;
+
 			.carousel-mobile-item {
 				display: block;
 				height: 60vh;
@@ -163,6 +165,9 @@
 				min-width: 160px;
 				margin: 0 10px;
 				position: relative;
+
+				border: 1px solid green;
+
 
 				.btn-play-video-container {
 					position: absolute;
@@ -251,5 +256,12 @@
 				}
 			}
 		}
+	}
+}
+
+@media screen and (min-width:0\0) {  
+	/* IE9 and IE10 rule sets go here */  
+	.header-desktop .my-container .carousel-animals .carousel-animal-item {
+		max-width: 220px;
 	}
 }
