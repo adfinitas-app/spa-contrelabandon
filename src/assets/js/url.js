@@ -63,7 +63,7 @@ function addOrModifyQueryParameter(elem, parameter, newValue, attr = "href") {
 		newElemHref = newElemHref.slice(0, newElemHref.indexOf("#"));
 	}
 
-	if (!newElemHref.indexOf("?") >= 0) {
+	if (newElemHref.indexOf("?") < 0) {
 		// Insert ? if not present
 		newElemHref += "?";
 		addedInterrogation = true;
