@@ -5,13 +5,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>La SPA - Contre l'abandon</title>
 		<link rel="icon" type="image/png" href="@@webRoot/assets/img/favicon.png" />
-		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 		<link rel="stylesheet" href="@@webRoot/assets/css/styles.min.css" />
 		@@include('partials/_meta.html') @@include('partials/_GTM_SPA_HEAD.html')
 	</head>
 	<body>
-		@@include('partials/nav.html', {skip: true}) @@include('partials/header.html')
-		@@include('partials/footer.html') @@include('partials/_GTM_SPA_BODY.html')
+		@@include('partials/nav.html', {skip: true})
+		@@include('partials/header.html')
+		@@include('partials/modal_video.html');
+		@@include('partials/footer.html')
+		@@include('partials/_GTM_SPA_BODY.html')
 		@@include('partials/_scripts.html')
 	</body>
 </html>

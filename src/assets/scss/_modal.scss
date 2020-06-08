@@ -1,0 +1,19 @@
+#modal-video {
+    .modal-dialog {
+        // height: auto;
+
+        .modal-content {
+            height: auto;
+
+            .close {
+                margin-bottom: 5px;
+            }
+
+            .modal-body {
+                height: 100%;
+
+                padding: 5px;
+            }
+        }
+    }
+}

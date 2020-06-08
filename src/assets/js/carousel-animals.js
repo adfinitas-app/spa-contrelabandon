@@ -51,11 +51,4 @@ $(document).ready(function() {
         $('.mini-nav-item.active').removeClass('active');
         defaultMini.addClass('active');
     });
-
-    const carouselAnimals = new Swiper('.swiper-container', {
-        //slidesPerView: 3,
-        spaceBetween: 30,
-        freeMode: true,
-        //centeredSlides: true
-    });
 });
