@@ -193,8 +193,7 @@
 					height: 100%;
 					position: relative;
 					z-index: 1;
-					background-size: cover;
-					background-position: center;
+					
 					transition: transform $transitionTime;
 					width: 100%;
 
@@ -237,7 +236,7 @@
 
 				&.active {
 					height: 75vh;
-					max-height: 900px;
+					max-height: 600px;
 					min-width: 200px;
 
 					.btn-play-video-container {
