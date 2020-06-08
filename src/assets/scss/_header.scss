@@ -156,8 +156,6 @@
 			align-items: center;
 			margin-top: 50px;
 
-			border: 1px solid red;
-
 			.carousel-mobile-item {
 				display: block;
 				height: 60vh;
@@ -165,9 +163,6 @@
 				min-width: 160px;
 				margin: 0 10px;
 				position: relative;
-
-				border: 1px solid green;
-
 
 				.btn-play-video-container {
 					position: absolute;
@@ -193,9 +188,12 @@
 					height: 100%;
 					position: relative;
 					z-index: 1;
-					
+					background-size: cover;
+					background-position: center;
 					transition: transform $transitionTime;
 					width: 100%;
+
+					border: 1px solid green;
 
 					.carousel-overlay {
 						position: absolute;
