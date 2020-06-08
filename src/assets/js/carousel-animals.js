@@ -12,7 +12,26 @@ $(document).ready(function() {
     //     $('.carousel-mobile-item.active').removeClass('active');
     //     $(this).addClass('active');
     // });
-    
+
+    //FIX IPHONE 5
+    let isMoving = false;
+    $('.header.mobile .carousel-mobile').on('touchend', function() {
+        isMoving = false;
+    });
+
+    $('.header.mobile .carousel-mobile').on('touchmove', function() {
+        isMoving = true;
+    });
+
+    $('.header.mobile .carousel-mobile a').on('click', function(e) {
+        if (isMoving) {
+            e.preventDefault();
+            return false;
+        }
+    });
+
+
+
     let actualSelected = 1;
     $('.header.mobile .carousel-mobile').scroll(function() {
         const left = $(this).scrollLeft()
