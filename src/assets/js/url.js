@@ -63,7 +63,7 @@ function addOrModifyQueryParameter(elem, parameter, newValue, attr = "href") {
 		newElemHref = newElemHref.slice(0, newElemHref.indexOf("#"));
 	}
 
-	if (!newElemHref.includes("?")) {
+	if (!newElemHref.indexOf("?") >= 0) {
 		// Insert ? if not present
 		newElemHref += "?";
 		addedInterrogation = true;
@@ -89,7 +89,7 @@ function transferQueryParams($links, attr = "href") {
 		const value = qs[i][1];
 
 		$links.each(function () {
-			if (authorized_keys.includes(key)) {
+			if (authorized_keys.indexOf(key) >= 0) {
 				addOrModifyQueryParameter($(this), key, value, attr);
 			}
 		});
