@@ -89,12 +89,18 @@
 <section class="subpage mobile d-block d-md-none @@if(context.id){subpage-@@id}">
 	<div class="back-container">
 		<a href="/?skip_video=true" class="btn-nav btn-back">
-			<img src="@@webRoot/assets/img/btn-back.png" />
+			<img src="@@webRoot/assets/img/btn-back.svg" />
 		</a>
 	</div>
 
 	<div class="img-container">
-		<img src="@@img" />
+		@@if (context.url_prev) {
+			<a href="@@url_prev" class="link prev"><img src="@@webRoot/assets/img/arrow-left.svg"/></a>
+		}
+		@@if (context.url_next) {
+			<a href="@@url_next" class="link next"><img src="@@webRoot/assets/img/arrow-right.svg"/></a>
+		}
+		<img class="img-animal" src="@@img" />
 		<div class="animal-label">
 			<p class="title">@@label_title</p>
 			<p class="description">@@label_description</p>

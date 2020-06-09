@@ -158,17 +158,11 @@ $(document).ready(function () {
 		updateBloc(bloc1, frequency, "bloc1");
 		updateBloc(bloc2, frequency, "bloc2");
 		updateBloc(bloc3, frequency, "bloc3");
-		if (frequency === "once") {
-			addOrModifyQueryParameter(bloc1, "cid", cid, "href");
-			addOrModifyQueryParameter(bloc2, "cid", cid, "href");
-			addOrModifyQueryParameter(bloc3, "cid", cid, "href");
-			addOrModifyQueryParameter(btnDon, "cid", cid, "href");
-		} else if (frequency === "regular") {
-			addOrModifyQueryParameter(bloc1, "cid", "227", "href");
-			addOrModifyQueryParameter(bloc2, "cid", "227", "href");
-			addOrModifyQueryParameter(bloc3, "cid", "227", "href");
-			addOrModifyQueryParameter(btnDon, "cid", "227", "href");
-		}
+
+		addOrModifyQueryParameter(bloc1, "cid", cid, "href");
+		addOrModifyQueryParameter(bloc2, "cid", cid, "href");
+		addOrModifyQueryParameter(bloc3, "cid", cid, "href");
+		addOrModifyQueryParameter(btnDon, "cid", cid, "href");
 	}
 
 	$('input[name="frequency"]').on("change", function () {

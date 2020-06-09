@@ -238,9 +238,26 @@
 		position: relative;
 		margin-bottom: 40px;
 
-		img {
+		.img-animal {
 			width: 70%;
 		}
+
+		.link.prev, .link.next {
+			position: absolute;
+			top: 50%;
+			transform: translate(0%, -50%);
+			z-index: 4;
+		}
+
+		.link.prev {
+			left: 1%;
+		}
+
+		.link.next {
+			right: 31%;
+		}
+
+
 
 		.animal-label {
 			position: absolute;
