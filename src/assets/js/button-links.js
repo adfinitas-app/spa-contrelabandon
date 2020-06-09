@@ -27,5 +27,8 @@ $(document).ready(function () {
 			addOrModifyQueryParameter(btnDon, "cid", "223", "href");
 		}
 	}
-
+	else {
+		addOrModifyQueryParameter(btnDon, "cid", "224", "href");
+		addOrModifyQueryParameter(btnDon, "reserved_code_media", "W20PD0ZZL", "href");
+	};
 });
