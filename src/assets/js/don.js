@@ -26,18 +26,18 @@ $(document).ready(function () {
 		regular: {
 			bloc1: {
 				"don-amount": 10,
-				"don-soit": "3,40",
+				"don-soit": 3,
 				"don-text": "Vous contribuez à nourrir les animaux abandonnés que nous recueillons.",
 			},
 			bloc2: {
 				"don-amount": 15,
-				"don-soit": "5,10",
+				"don-soit": 5,
 				"don-text":
 					"Vous participez à la prise en charge vétérinaire d’animaux blessés ou malades.",
 			},
 			bloc3: {
 				"don-amount": 30,
-				"don-soit": "19,20",
+				"don-soit": 10,
 				"don-text":
 					"Vous financez l’étude comportementale de 5 animaux pour les aider à se remettre du choc de l’abandon.",
 			},
@@ -87,7 +87,7 @@ $(document).ready(function () {
 			bloc1: {
 				"don-amount": 60,
 				"don-soit": 20,
-				"don-text": "Prend en charge la nourriture et les soins d’un chat abandonné pendant 2 mois.",
+				"don-text": "Vous prenez en charge la nourriture et les soins d’un chat abandonné pendant 2 mois.",
 			},
 			bloc2: {
 				"don-amount": 90,
@@ -98,7 +98,7 @@ $(document).ready(function () {
 			bloc3: {
 				"don-amount": 120,
 				"don-soit": 41,
-				"don-text": "Permet de soigner pendant 6 mois un chien victime d’abandon . ",
+				"don-text": "Vous permettez de soigner pendant 6 mois un chien victime d’abandon . ",
 			},
 		};
 
@@ -113,7 +113,7 @@ $(document).ready(function () {
 			addOrModifyQueryParameter(bloc3, "reserved_code_media", "W20PD0ZZL", "href");
 			addOrModifyQueryParameter(btnDon, "reserved_code_media", "W20PD0ZZL", "href");
 		}
-		
+
 
 		cid = 224;
 		addOrModifyQueryParameter(bloc1, "cid", "224", "href");
@@ -129,7 +129,7 @@ $(document).ready(function () {
 
 		const nb = parseFloat(input);
 
-		const soit = (nb * 0.34).toFixed(2);
+		const soit = Math.ceil(nb * 0.34);
 		blocFree.find(".soit").children("span").text(soit);
 
 		addOrModifyQueryParameter(btnDon, "free_amount", "1", "href");
