@@ -1,9 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
-  <g id="Groupe_281" data-name="Groupe 281" transform="translate(-225 -15)">
-    <circle id="Ellipse_8" data-name="Ellipse 8" cx="19.5" cy="19.5" r="19.5" transform="translate(225 15)" fill="#fff"/>
-    <g id="Groupe_260" data-name="Groupe 260" transform="translate(234.59 26.634)">
-      <path id="Tracé_372" data-name="Tracé 372" d="M1175.224,421.441l-5.7,5.7,5.7,5.7" transform="translate(-1169.521 -421.441)" fill="none" stroke="#564637" stroke-linecap="round" stroke-width="2"/>
-      <path id="Tracé_373" data-name="Tracé 373" d="M1169.521,438.416h10.072s8.323-.844,8.02,8.026" transform="translate(-1169.521 -432.714)" fill="none" stroke="#564637" stroke-linecap="round" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="38" viewBox="0 0 44 38">
+  <g id="Groupe_237" data-name="Groupe 237" transform="translate(-164 -15)">
+    <g id="Groupe_223" data-name="Groupe 223" transform="translate(137 -288)">
+      <g id="Groupe_217" data-name="Groupe 217" transform="translate(-145.611 -452)">
+        <rect id="Rectangle_1" data-name="Rectangle 1" width="44" height="38" rx="19" transform="translate(172.611 755)" fill="#fff"/>
+      </g>
     </g>
+    <path id="Tracé_69" data-name="Tracé 69" d="M-1270.02,82.053l8.356,8.356-8.356,8.356" transform="translate(1449 -57)" fill="none" stroke="#564637" stroke-linecap="round" stroke-width="2"/>
+    <path id="Tracé_70" data-name="Tracé 70" d="M-1270.02,82.053l8.356,8.356-8.356,8.356" transform="translate(1456 -57)" fill="none" stroke="#564637" stroke-linecap="round" stroke-width="2"/>
   </g>
 </svg>
