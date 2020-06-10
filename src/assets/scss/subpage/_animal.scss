@@ -264,7 +264,7 @@
 			background-color: $color-orange;
 			color: white;
 			padding: 20px 20px;
-			top: 40px;
+			bottom: 40px;
 			right: 0%;
 			display: inline-block;
 
@@ -373,9 +373,4 @@
 			
 		}
 	}
-}
-
-.subpage.mobile.subpage-2 .img-container .animal-label {
-	top: inherit;
-	bottom: 40px;
 }
