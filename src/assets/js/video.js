@@ -1,27 +1,27 @@
 $(document).ready(function () {
-	let breakpoint = 1000;
-	const video = $(".video");
+	const videoPath = $('.video-container').data('url');
+	const video = $(`
+		<video autoplay class="video">
+			<source src="${videoPath}" type="video/mp4" />
+		</video>
+	`);
+	const videoMobile = $(`
+		<video class="video">
+			<source src="${videoPath}" type="video/mp4" />
+		</video>
+	`);
 
-	//checkBroke($(window).width());
-
-	function checkBroke(width) {
-		if (width > breakpoint) {
-			video.css({ height: "auto", width: "100%" });
-		} else if (width <= breakpoint) {
-			video.css({ height: "100%", width: "auto" });
-		}
+	//desktop
+	if ($(window).width() > 768) {		
+		$('.video-container').html(video);
+	} else {
+		$('#modal-video .modal-body').append(videoMobile);
 	}
-
-	$(window).resize(function () {
-		const _this = $(this);
-		const width = _this.width();
-
-		//checkBroke(width);
-	});
 
 	$(".btn-skip").on("click", function (e) {
 		e.preventDefault();
 
+		video.get(0).pause();
 		video.trigger("ended");
 	});
 
@@ -37,7 +37,7 @@ $(document).ready(function () {
 			.removeClass("d-none");
 		$(".carousel-animal-item.active").find(".animal-label").css("opacity", "0");
 
-		video.fadeOut(200, function () {
+		$('.video-container').fadeOut(200, function () {
 			$(".carousel-animals").css("opacity", "1");
 			$(".header").css("background-image", "none").css({ "background-color": "transparent" });
 			$(".carousel-animals").css("height", "450px");
@@ -61,18 +61,11 @@ $(document).ready(function () {
 	});
 
 	$("#modal-video").on("shown.bs.modal", function () {
-		const iframeYoutube = $(".iframeYoutube");
-
-		iframeYoutube.attr("src", iframeYoutube.attr("autoplay-src"));
-		iframeYoutube.css("width", "100%");
+		videoMobile.css("width", "100%");
+		videoMobile.get(0).play();
 	});
 
 	$("#modal-video").on("hidden.bs.modal", function () {
-		const iframeYoutube = $(".iframeYoutube");
-
-		const src = iframeYoutube.attr("default-src")
-
-		iframeYoutube.attr("src", '');
-		iframeYoutube.attr("src", src);
+		videoMobile.get(0).pause();
 	});
 });

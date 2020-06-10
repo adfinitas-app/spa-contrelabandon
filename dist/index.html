@@ -74,9 +74,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </nav>
 
 		<header class="header desktop d-none d-md-block">
-    <video autoplay muted class="video">
-        <source src="./assets/img/video-compressed.mp4" type="video/mp4" />
-    </video>
+    <div class="video-container" data-url="./assets/img/video-compressed.mp4">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
     <div class="my-container container">
         <div class="carousel-animals">
             <a
@@ -264,17 +266,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
-				<iframe
-					width="560"
-					height="265"
-                    src="https://www.youtube.com/embed/qlPs0i_lSZA"
-                    default-src="https://www.youtube.com/embed/qlPs0i_lSZA"
-                    autoplay-src="https://www.youtube.com/embed/qlPs0i_lSZA?autoplay=1"
-					frameborder="0"
-					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    class="iframeYoutube"
-				></iframe>
+				
 			</div>
 		</div>
 	</div>

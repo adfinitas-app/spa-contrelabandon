@@ -12,6 +12,19 @@
 	overflow: hidden;
 	transition: background-color 2s;
 
+	.video-container {
+		display: flex;
+		height: 100%;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		.spinner-border {
+			color: $color-orange;
+			width: 3em;
+			height: 3em;
+		}
+	}
 	.video {
 		width: 100%;
 		// position: absolute;
