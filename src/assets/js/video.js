@@ -13,8 +13,21 @@ $(document).ready(function () {
 
 	$('.video-preview-container').click(function() {
 		$(this).hide();
+		$('.video-control-container').show();
 		video.show();
 		video.get(0).play();
+	});
+
+	$('.video-control.reset').click(function() {
+		video.get(0).currentTime = 0;
+	});
+
+	$('.video-control.play').click(function() {
+		video.get(0).play();
+	});
+
+	$('.video-control.pause').click(function() {
+		video.get(0).pause();
 	});
 
 	//desktop
