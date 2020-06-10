@@ -1,19 +1,25 @@
 $(document).ready(function () {
 	const videoPath = $('.video-container').data('url');
 	const video = $(`
-		<video autoplay class="video">
-			<source src="${videoPath}" type="video/mp4" />
-		</video>
-	`);
-	const videoMobile = $(`
 		<video class="video">
 			<source src="${videoPath}" type="video/mp4" />
 		</video>
 	`);
+	const videoMobile = $(`
+		<video controls class="video">
+			<source src="${videoPath}" type="video/mp4" />
+		</video>
+	`);
+
+	$('.video-preview-container').click(function() {
+		$(this).hide();
+		video.show();
+		video.get(0).play();
+	});
 
 	//desktop
 	if ($(window).width() > 768) {		
-		$('.video-container').html(video);
+		$('.video-container').append(video);
 	} else {
 		$('#modal-video .modal-body').append(videoMobile);
 	}
